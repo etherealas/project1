@@ -1,19 +1,19 @@
+let numberOfFimls = prompt('Сколько фильмов вы уже посмотрели', '');
 
-let incr = 10,
-    decr = 10;
+let personalMovieDB = {
+   count: numberOfFimls,
+   movies: {},
+   actors: {},
+   geners: [],
+   privat: false
+};
 
-console.log(++incr);
-console.log(--decr);
+let a = prompt('Один из последних просмотренных фильмов?', ''),
+    b = prompt('На сколько оцените его?', ''),
+    c = prompt('Один из последних просмотренных фильмов?', ''),
+    d = prompt('Один из последних просмотренных фильмов?', '');
 
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-console.log(5%2);
-
-console.log(2+4*2 == 8);
-
-&&
-||
-
-const isChecked = true,
-      isClose = true;
-
-console.log(isChecked || !isClose);
+console.log(personalMovieDB);
